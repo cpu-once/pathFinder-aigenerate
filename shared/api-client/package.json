@@ -1,9 +1,0 @@
-{
-  "name": "@pathfinder/api-client",
-  "version": "0.1.0",
-  "description": "Auto-generated API client and types",
-  "main": "src/generated/index.ts",
-  "dependencies": {
-    "axios": "^1.6.0"
-  }
-}
