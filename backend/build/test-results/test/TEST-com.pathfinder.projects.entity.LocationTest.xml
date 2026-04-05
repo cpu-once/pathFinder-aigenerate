@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pathfinder.projects.entity.LocationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-05T00:21:14.081Z" hostname="M1PRO-13.local" time="0.0">
+  <properties/>
+  <testcase name="testNoArgConstructor()" classname="com.pathfinder.projects.entity.LocationTest" time="0.0"/>
+  <testcase name="testLocationConstructorAndGetters()" classname="com.pathfinder.projects.entity.LocationTest" time="0.0"/>
+  <testcase name="testSetProject()" classname="com.pathfinder.projects.entity.LocationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

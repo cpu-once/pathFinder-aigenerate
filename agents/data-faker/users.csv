@@ -1,0 +1,21 @@
+id,name,email,role
+53fd3219-5010-4bd7-951d-0547a935f38f,Sean Ware MD,coryshort@example.net,WORKER
+2d307003-73b2-4f5e-a6c0-a267173238f3,Michael Sanchez,paulduncan@example.org,MANAGER
+1ec7f8e8-2692-4e52-b7f1-2b4d89f69b35,Rebecca Smith,alexander48@example.org,ENGINEER
+6ec340be-fd2b-43dc-8e15-00eec9d1750a,Louis Anderson,thomas68@example.net,WORKER
+f2c52e9f-895c-43ce-934d-e71800299e90,Theresa Nixon,smithjessica@example.net,WORKER
+51ee4de4-39f2-42e8-b799-5a50d2d28ac0,Wendy Reed,mmcbride@example.org,ENGINEER
+a5e30068-a0fa-4e9c-858d-04a4f5b9dd4b,Jason Gates,cameronjustin@example.org,ADMIN
+e4757c63-6270-4534-8ef0-0277b7eaff80,Jordan Ramos,ericdavidson@example.net,ADMIN
+67a31318-34ed-4208-bb42-b9685f59d0b9,Zachary Kelly,carlosjones@example.org,WORKER
+d8f9cace-8719-4b9d-a875-7f794031dfbb,Dr. Douglas Smith MD,hansenlaura@example.org,MANAGER
+3e6b1624-1502-43a2-9e7e-cd8cf134146b,Ryan Ward,daniel59@example.net,ENGINEER
+36b63839-73ca-40db-9b13-926e4fcf2f22,Robert Gonzalez,umelendez@example.org,ADMIN
+5fa5bc50-94f4-4f75-988b-4555e6c99d65,Regina Mejia,xjackson@example.net,MANAGER
+9880932d-3936-46d0-9a49-e40e2e3c92da,Brandon Arnold,johnparker@example.org,WORKER
+92c494a0-7aab-4e4c-9dcc-be3891b8e5d1,Michael Castillo,garrettjulie@example.net,WORKER
+09d84407-c76d-4eb3-a41d-d5a70264670e,Joseph Webb DDS,sandra59@example.org,ENGINEER
+06f51780-c19f-4618-9e77-320a0659d1e1,Kyle Murray,ewalter@example.com,ENGINEER
+b969773e-4dc8-4660-9d1a-44f8299ddfa1,Angela Decker DDS,taylorsteven@example.org,ADMIN
+83fd27c6-fab6-4cc7-846f-e579f4cc91f4,Isaac Dixon,tammy83@example.com,ADMIN
+c6dcddd8-dc7e-45cc-888f-59c256c8e9d5,Louis Hopkins,vfoley@example.com,MANAGER

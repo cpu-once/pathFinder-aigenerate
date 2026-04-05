@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pathfinder.PathfinderApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-05T00:21:07.748Z" hostname="M1PRO-13.local" time="6.291">
+  <properties/>
+  <testcase name="verifyModulithStructure()" classname="com.pathfinder.PathfinderApplicationTests" time="2.537"/>
+  <testcase name="contextLoads()" classname="com.pathfinder.PathfinderApplicationTests" time="0.002"/>
+  <system-out><![CDATA[09:21:07.818 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.pathfinder.PathfinderApplicationTests]: PathfinderApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:21:07.915 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.pathfinder.PathfinderApplication for test class com.pathfinder.PathfinderApplicationTests
+09:21:07.966 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.pathfinder.PathfinderApplicationTests]: PathfinderApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:21:07.967 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.pathfinder.PathfinderApplication for test class com.pathfinder.PathfinderApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-04-05T09:21:08.220+09:00  INFO 83224 --- [backend] [    Test worker] c.pathfinder.PathfinderApplicationTests  : Starting PathfinderApplicationTests using Java 25.0.2 with PID 83224 (started by flynn_macpro in /Users/flynn_macpro/PathFinder-app/backend)
+2026-04-05T09:21:08.222+09:00  INFO 83224 --- [backend] [    Test worker] c.pathfinder.PathfinderApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T09:21:08.774+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-05T09:21:08.776+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05T09:21:08.898+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2026-04-05T09:21:08.923+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-05T09:21:08.924+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2026-04-05T09:21:08.933+09:00  INFO 83224 --- [backend] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Neo4j - Could not safely identify store assignment for repository candidate interface com.pathfinder.projects.repository.ProjectRepository; If you want this repository to be a Neo4j repository, consider annotating your entities with one of these annotations: org.springframework.data.neo4j.core.schema.Node, org.springframework.data.neo4j.core.schema.RelationshipProperties (preferred), or consider extending one of the following types with your repository: org.springframework.data.neo4j.repository.ReactiveNeo4jRepository
+2026-04-05T09:21:08.935+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Neo4j repository interfaces.
+2026-04-05T09:21:08.940+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-05T09:21:08.941+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2026-04-05T09:21:08.947+09:00  INFO 83224 --- [backend] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Neo4j - Could not safely identify store assignment for repository candidate interface com.pathfinder.projects.repository.ProjectRepository; If you want this repository to be a Neo4j repository, consider annotating your entities with one of these annotations: org.springframework.data.neo4j.core.schema.Node, org.springframework.data.neo4j.core.schema.RelationshipProperties (preferred), or consider extending one of the following types with your repository: org.springframework.data.neo4j.repository.Neo4jRepository
+2026-04-05T09:21:08.948+09:00  INFO 83224 --- [backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Neo4j repository interfaces.
+2026-04-05T09:21:09.275+09:00  INFO 83224 --- [backend] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-05T09:21:09.320+09:00  INFO 83224 --- [backend] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-05T09:21:09.619+09:00  INFO 83224 --- [backend] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05T09:21:09.639+09:00  INFO 83224 --- [backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05T09:21:09.752+09:00  INFO 83224 --- [backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-05T09:21:09.753+09:00  INFO 83224 --- [backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-05T09:21:09.767+09:00  WARN 83224 --- [backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-05T09:21:09.782+09:00  INFO 83224 --- [backend] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05T09:21:10.390+09:00  INFO 83224 --- [backend] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05T09:21:10.401+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists decisions cascade 
+Hibernate: 
+    drop table if exists decisions cascade 
+2026-04-05T09:21:10.402+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists event_publication cascade 
+Hibernate: 
+    drop table if exists event_publication cascade 
+2026-04-05T09:21:10.402+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists issues cascade 
+Hibernate: 
+    drop table if exists issues cascade 
+2026-04-05T09:21:10.403+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists location cascade 
+Hibernate: 
+    drop table if exists location cascade 
+2026-04-05T09:21:10.403+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists project cascade 
+Hibernate: 
+    drop table if exists project cascade 
+2026-04-05T09:21:10.403+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists proposals cascade 
+Hibernate: 
+    drop table if exists proposals cascade 
+2026-04-05T09:21:10.403+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists users cascade 
+Hibernate: 
+    drop table if exists users cascade 
+2026-04-05T09:21:10.403+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists work_items cascade 
+Hibernate: 
+    drop table if exists work_items cascade 
+2026-04-05T09:21:10.406+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table decisions (
+        decided_at timestamp(6),
+        decided_by uuid,
+        id uuid not null,
+        issue_id uuid,
+        selected_proposal_id uuid,
+        rationale TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table decisions (
+        decided_at timestamp(6),
+        decided_by uuid,
+        id uuid not null,
+        issue_id uuid,
+        selected_proposal_id uuid,
+        rationale TEXT,
+        primary key (id)
+    )
+2026-04-05T09:21:10.412+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table event_publication (
+        completion_attempts integer not null,
+        completion_date timestamp(6) with time zone,
+        last_resubmission_date timestamp(6) with time zone,
+        publication_date timestamp(6) with time zone not null,
+        id uuid not null,
+        event_type varchar(255) not null,
+        listener_id varchar(255) not null,
+        serialized_event varchar(255) not null,
+        status enum ('COMPLETED','FAILED','PROCESSING','PUBLISHED','RESUBMITTED'),
+        primary key (id)
+    )
+Hibernate: 
+    create table event_publication (
+        completion_attempts integer not null,
+        completion_date timestamp(6) with time zone,
+        last_resubmission_date timestamp(6) with time zone,
+        publication_date timestamp(6) with time zone not null,
+        id uuid not null,
+        event_type varchar(255) not null,
+        listener_id varchar(255) not null,
+        serialized_event varchar(255) not null,
+        status enum ('COMPLETED','FAILED','PROCESSING','PUBLISHED','RESUBMITTED'),
+        primary key (id)
+    )
+2026-04-05T09:21:10.414+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table issues (
+        id uuid not null,
+        project_id uuid,
+        description varchar(255),
+        status varchar(255),
+        title varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table issues (
+        id uuid not null,
+        project_id uuid,
+        description varchar(255),
+        status varchar(255),
+        title varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.415+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table location (
+        id bigint generated by default as identity,
+        project_id bigint,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table location (
+        id bigint generated by default as identity,
+        project_id bigint,
+        name varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.419+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table project (
+        id bigint generated by default as identity,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table project (
+        id bigint generated by default as identity,
+        name varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.420+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table proposals (
+        created_at timestamp(6),
+        author_id uuid,
+        id uuid not null,
+        issue_id uuid,
+        content TEXT,
+        type varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table proposals (
+        created_at timestamp(6),
+        author_id uuid,
+        id uuid not null,
+        issue_id uuid,
+        content TEXT,
+        type varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.422+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table users (
+        id uuid not null,
+        email varchar(255),
+        name varchar(255),
+        role varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        id uuid not null,
+        email varchar(255),
+        name varchar(255),
+        role varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.424+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    create table work_items (
+        end_date date,
+        start_date date,
+        id uuid not null,
+        project_id uuid,
+        status varchar(255),
+        title varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table work_items (
+        end_date date,
+        start_date date,
+        id uuid not null,
+        project_id uuid,
+        status varchar(255),
+        title varchar(255),
+        primary key (id)
+    )
+2026-04-05T09:21:10.425+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists location 
+       add constraint FKfcexut699lbn2p6pjtot3g2lw 
+       foreign key (project_id) 
+       references project
+Hibernate: 
+    alter table if exists location 
+       add constraint FKfcexut699lbn2p6pjtot3g2lw 
+       foreign key (project_id) 
+       references project
+2026-04-05T09:21:10.433+09:00  INFO 83224 --- [backend] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05T09:21:10.512+09:00  INFO 83224 --- [backend] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-05T09:21:10.674+09:00  WARN 83224 --- [backend] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-05T09:21:11.122+09:00  INFO 83224 --- [backend] [    Test worker] o.neo4j.driver.internal.DriverFactory    : Driver instance 573032493 created for server uri 'bolt://localhost:7687'
+2026-04-05T09:21:11.291+09:00  INFO 83224 --- [backend] [    Test worker] o.s.s.config.TaskSchedulerRouter         : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2026-04-05T09:21:11.295+09:00  INFO 83224 --- [backend] [    Test worker] c.pathfinder.PathfinderApplicationTests  : Started PathfinderApplicationTests in 3.283 seconds (process running for 4.382)
+2026-04-05T09:21:11.345+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+2026-04-05T09:21:11.349+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Project 1]
+2026-04-05T09:21:11.370+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.370+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location A of Project 1]
+2026-04-05T09:21:11.370+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [1]
+2026-04-05T09:21:11.372+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.372+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location B of Project 1]
+2026-04-05T09:21:11.372+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [1]
+2026-04-05T09:21:11.374+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+2026-04-05T09:21:11.375+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Project 2]
+2026-04-05T09:21:11.376+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.377+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location A of Project 2]
+2026-04-05T09:21:11.377+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [2]
+2026-04-05T09:21:11.378+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.378+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location B of Project 2]
+2026-04-05T09:21:11.378+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [2]
+2026-04-05T09:21:11.379+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Project
+        */insert 
+    into
+        project (name, id) 
+    values
+        (?, default)
+2026-04-05T09:21:11.379+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Project 3]
+2026-04-05T09:21:11.379+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.380+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location A of Project 3]
+2026-04-05T09:21:11.380+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [3]
+2026-04-05T09:21:11.382+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    /* insert 
+    for
+        com.pathfinder.projects.entity.Location
+        */insert 
+    into
+        location (name, project_id, id) 
+    values
+        (?, ?, default)
+2026-04-05T09:21:11.382+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Location B of Project 3]
+2026-04-05T09:21:11.382+09:00 TRACE 83224 --- [backend] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [3]
+2026-04-05T09:21:11.383+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : --- N+1 Problem Demonstration Start ---
+2026-04-05T09:21:11.474+09:00 DEBUG 83224 --- [backend] [    Test worker] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id,
+        p1_0.name 
+    from
+        project p1_0
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id,
+        p1_0.name 
+    from
+        project p1_0
+2026-04-05T09:21:11.484+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Found 3 projects. Now accessing their locations...
+2026-04-05T09:21:11.484+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Project: 'Project 1', Locations count: 2
+2026-04-05T09:21:11.484+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Project: 'Project 2', Locations count: 2
+2026-04-05T09:21:11.484+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Project: 'Project 3', Locations count: 2
+2026-04-05T09:21:11.485+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : --- N+1 Problem Demonstration End ---
+2026-04-05T09:21:12.316+09:00  INFO 83224 --- [backend] [    Test worker] com.tngtech.archunit.core.PluginLoader   : Detected Java version 25.0.2
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/flynn_macpro/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

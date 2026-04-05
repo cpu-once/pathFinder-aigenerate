@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pathfinder.projects.service.ProjectServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-05T00:21:14.275Z" hostname="M1PRO-13.local" time="0.006">
+  <properties/>
+  <testcase name="testDemonstrateNPlusOne()" classname="com.pathfinder.projects.service.ProjectServiceTest" time="0.005"/>
+  <system-out><![CDATA[2026-04-05T09:21:14.279+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : --- N+1 Problem Demonstration Start ---
+2026-04-05T09:21:14.280+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Found 2 projects. Now accessing their locations...
+2026-04-05T09:21:14.280+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Project: 'P1', Locations count: 2
+2026-04-05T09:21:14.281+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : Project: 'P2', Locations count: 0
+2026-04-05T09:21:14.281+09:00  INFO 83224 --- [backend] [    Test worker] c.p.projects.service.ProjectService      : --- N+1 Problem Demonstration End ---
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

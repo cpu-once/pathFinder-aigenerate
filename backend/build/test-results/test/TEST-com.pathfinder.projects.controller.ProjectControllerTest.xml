@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pathfinder.projects.controller.ProjectControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-05T00:21:14.079Z" hostname="M1PRO-13.local" time="0.001">
+  <properties/>
+  <testcase name="testCreateProject()" classname="com.pathfinder.projects.controller.ProjectControllerTest" time="0.0"/>
+  <testcase name="testGetProject()" classname="com.pathfinder.projects.controller.ProjectControllerTest" time="0.0"/>
+  <testcase name="testListProjects()" classname="com.pathfinder.projects.controller.ProjectControllerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

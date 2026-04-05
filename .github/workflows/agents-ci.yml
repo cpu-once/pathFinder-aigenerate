@@ -1,0 +1,29 @@
+name: Agents CI
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'agents/**'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'agents/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - name: Install dependencies
+      run: |
+        cd agents/data-faker
+        pip install -r requirements.txt
+    - name: Run tests
+      run: |
+        cd agents/data-faker
+        pytest

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pathfinder.backend.BackendApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-05T00:21:14.053Z" hostname="M1PRO-13.local" time="0.017">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.pathfinder.backend.BackendApplicationTests" time="0.002"/>
+  <system-out><![CDATA[2026-04-05T09:21:14.055+09:00  INFO 83224 --- [backend] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pathfinder.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-05T09:21:14.064+09:00  INFO 83224 --- [backend] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pathfinder.PathfinderApplication for test class com.pathfinder.backend.BackendApplicationTests
+2026-04-05T09:21:14.065+09:00  INFO 83224 --- [backend] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pathfinder.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-05T09:21:14.065+09:00  INFO 83224 --- [backend] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pathfinder.PathfinderApplication for test class com.pathfinder.backend.BackendApplicationTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
